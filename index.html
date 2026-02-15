@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenkins Practice Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            border-radius: 12px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: #4e73df;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #f8f9fc;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🚀 Jenkins CI/CD Test Page</h1>
+    <p>Deployment Successful!</p>
+    <p>This page is used for pipeline practice.</p>
+
+    <a href="#" class="btn">Test Button</a>
+
+    <footer>
+        <p>Server Time: <span id="time"></span></p>
+    </footer>
+</div>
+
+<script>
+    document.getElementById("time").innerText = new Date().toLocaleString();
+</script>
+
+</body>
+</html>
